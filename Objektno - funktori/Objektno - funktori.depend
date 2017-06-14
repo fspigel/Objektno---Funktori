@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1497398618 source:c:\users\fspig\documents\projects\code blocks\objektno - funktori\main.cpp
+	<typeinfo>
+	"Functions.h"
+	"Function_implementations.h"
+
+1497398831 c:\users\fspig\documents\projects\code blocks\objektno - funktori\functions.h
+	<cassert>
+	<iostream>
+
+1497397249 source:c:\users\fspig\documents\projects\code blocks\objektno - funktori\functions.cpp
+	"Functions.h"
+
+1497398755 c:\users\fspig\documents\projects\code blocks\objektno - funktori\function_implementations.h
+	<cmath>
+	<iostream>
+	<cassert>
+
