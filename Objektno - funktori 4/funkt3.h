@@ -26,12 +26,23 @@ class Dummy{
 template <bool C, typename Ta, typename Tb>
 struct IfThenElse;
 
-template <bool C = true, typename Ta, typename Tb>
-struct IfThenElse{using type = Ta;};
+template <typename Ta, typename Tb>
+struct IfThenElse<true, Ta, Tb>{using type = Ta;};
 
-template <bool false, typename Ta, typename Tb>
-struct IfThenElse{using type = Tb;};
+template <typename Ta, typename Tb>
+struct IfThenElse<false, Ta, Tb>{using type = Tb;};
 
+template<typename FO, int NN>
+struct Parameter;
+
+template<typename FO>
+struct Parameter<FO, 1>{using ParamT = typename FO::Param1T;};
+
+template<typename FO>
+struct Parameter<FO, 2>{using ParamT = typename FO::Param2T;};
+
+template<typename FO>
+struct Parameter<FO, 3>{using ParamT = typename FO::Param3T;};
 
 template <typename FO, int NN>
 struct ParamT{
@@ -50,21 +61,22 @@ public:
     using Param1T = typename ParamT<FO1,1>::type;
     using Param2T = typename ParamT<FO1,2>::type;
     using Param3T = typename ParamT<FO1,3>::type;
-    using Return1T = typename FO2::Return1T;
+
+    using ReturnT = typename FO2::ReturnT;
 
     /** KOnstruktor kompozicije fo2 o fo1 */
     Composer(Base<FO1, 1> f1, Base<FO2, 2> f2) : Base<FO1,1>(f1), Base<FO2,2>(f2) {}
     Composer() : Base<FO1, 1>(FO1()), Base<FO2, 2>(FO2()){}
 
-    Return1T operator()(Param1T x)
+    ReturnT operator()(Param1T x)
     {
         return fo2(fo1(x));
     }
-    Return1T operator()(Param1T x, Param2T y)
+    ReturnT operator()(Param1T x, Param2T y)
     {
         return fo2(fo1(x, y));
     }
-    Return1T operator()(Param1T x, Param2T y, Param3T z)
+    ReturnT operator()(Param1T x, Param2T y, Param3T z)
     {
         return fo2(fo1(x, y, z));
     }

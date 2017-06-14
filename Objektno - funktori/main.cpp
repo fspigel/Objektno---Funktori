@@ -1,6 +1,6 @@
 #include <typeinfo>
-#include "Functions.h"
-#include "Function_implementations.h"
+#include "base_functors_0.h"
+#include "funkt0.h"
 
 int main()
 {

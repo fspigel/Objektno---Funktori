@@ -2,3 +2,28 @@
 1446671344 source:c:\users\fspig\documents\projects\code blocks\objektno - funktori 4\main.cpp
 	<iostream>
 
+1497449447 source:c:\users\fspigel\desktop\cb stuff\objektno---funktori\objektno - funktori 4\main.cpp
+	<iostream>
+	"base_functors_3.h"
+	"funkt3.h"
+	"print_3.h"
+
+1497448345 c:\users\fspigel\desktop\cb stuff\objektno---funktori\objektno - funktori 4\functions.h
+	<cassert>
+	<iostream>
+
+1497447433 c:\users\fspigel\desktop\cb stuff\objektno---funktori\objektno - funktori 4\function_implementations.h
+	<cmath>
+	<iostream>
+	<cassert>
+
+1497449330 c:\users\fspigel\desktop\cb stuff\objektno---funktori\objektno - funktori 4\funkt3.h
+	<cassert>
+	<iostream>
+
+1497448557 c:\users\fspigel\desktop\cb stuff\objektno---funktori\objektno - funktori 4\print_3.h
+	<cassert>
+
+1497448408 c:\users\fspigel\desktop\cb stuff\objektno---funktori\objektno - funktori 4\base_functors_3.h
+	<cmath>
+

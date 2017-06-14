@@ -5,6 +5,7 @@
 #include <cmath>
 #include <iostream>
 #include <cassert>
+#include "base_functors_3.h"
 
 /**  Kreiramo funkcijske objekte klasu koja pravi kompoziciju
 *    tih objekata.

@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Functions.h"
-#include "Function_implementations.h"
+#include "base_functors_2.h"
+#include "funkt2.h"
 
  int main()
 {

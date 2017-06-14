@@ -14,14 +14,14 @@ class Composer
 {
 public:
     using Param1T = typename FO1::Param1T;
-    using Return1T = typename FO2::Return1T;
+    using ReturnT = typename FO2::ReturnT;
 
     /** KOnstruktor kompozicije fo2 o fo1 */
     Composer(FO1 f1, FO2 f2) : fo1(f1), fo2(f2) {}
     Composer(){}
 
 
-    Return1T operator()(Param1T x)
+    ReturnT operator()(Param1T x)
     {
         return fo2(fo1(x));
     }

@@ -16,9 +16,9 @@ class Sin
 {
 public:
     using Param1T = double;
-    using Return1T = double;
+    using ReturnT = double;
 
-    Return1T operator()(Param1T x)
+    ReturnT operator()(Param1T x)
     {
         return std::sin(x);
     }
@@ -29,9 +29,9 @@ class Power
 {
 public:
     using Param1T = double;
-    using Return1T = double;
+    using ReturnT = double;
 
-    Return1T operator()(Param1T x)
+    ReturnT operator()(Param1T x)
     {
         return std::pow(x,N);
     }
@@ -41,9 +41,9 @@ class Floor
 {
 public:
     using Param1T = double;
-    using Return1T = int;
+    using ReturnT = int;
 
-    Return1T operator()(Param1T x)
+    ReturnT operator()(Param1T x)
     {
         return std::floor(x);
     }
